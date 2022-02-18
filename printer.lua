@@ -158,7 +158,7 @@ while true do
         if x ~= nil and z ~= nil then
             print("Impression...")
             printer.newPage()
-            local width, _ = printer.getPageSize()
+            local width = 25
             local temp = " "
             newLine()
             newLine()
