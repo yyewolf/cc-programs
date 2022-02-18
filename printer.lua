@@ -153,7 +153,6 @@ while true do
     end
     if input == "do" then
         local x, z = getCoord()
-        z="100000"
         print("X="..x)
         print("Z="..z)
         if x ~= nil and z ~= nil then
@@ -161,6 +160,9 @@ while true do
             printer.newPage()
             local width = 25
             local temp = " "
+            printer.write("X en premier.")
+            newLine()
+            printer.write("Z ensuite.")
             newLine()
             newLine()
             newLine()
@@ -204,6 +206,9 @@ while true do
                 end
                 newLine()
             end
+            newLine()
+            newLine()
+            printer.write("Bonne chance aventurier !")
             printer.endPage()
         end
     end
