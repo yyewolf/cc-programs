@@ -153,6 +153,7 @@ while true do
     end
     if input == "do" then
         local x, z = getCoord()
+        z="100000"
         print("X="..x)
         print("Z="..z)
         if x ~= nil and z ~= nil then
