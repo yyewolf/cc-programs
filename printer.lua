@@ -176,9 +176,9 @@ while true do
                 printer.write(temp:rep(spaces))
                 for j = 1, #x do
                     local coord = x:sub(j, j)
-                    local str = numbers[coord+1][i]
-                    if coord == "-" then
-                        str = numbers[11][i]
+                    local str = numbers[11][i]
+                    if coord ~= "-" then
+                        str =  numbers[coord+1][i]
                     end
                     printer.write(str)
                     printer.write(space)
@@ -197,9 +197,9 @@ while true do
                 printer.write(temp:rep(spaces))
                 for j = 1, #z do
                     local coord = z:sub(j, j)
-                    local str = numbers[coord+1][i]
-                    if coord == "-" then
-                        str = numbers[11][i]
+                    local str = numbers[11][i]
+                    if coord ~= "-" then
+                        str =  numbers[coord+1][i]
                     end
                     printer.write(str)
                     printer.write(space)
